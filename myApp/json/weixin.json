@@ -1,0 +1,25 @@
+{
+    "weixin": [
+        {
+            "id": "1",
+            "img": "img/lufei.jpg",
+            "name": "路飞",
+            "date": "8月26",
+            "text": "我是要成为海贼王的男人"
+        },
+        {
+            "id": "2",
+            "img": "img/luluxiu.jpg",
+            "name": "鲁路修",
+            "date": "8月26",
+            "text": "世界"
+        },
+        {
+            "id": "3",
+            "img": "img/mingren.jpg",
+            "name": "鸣人",
+            "date": "8月26",
+            "text": "佐助！！！"
+        }
+    ]
+}

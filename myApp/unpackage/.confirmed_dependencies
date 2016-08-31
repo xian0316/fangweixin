@@ -1,0 +1,68 @@
+{
+  "tab-webview-main.html": {
+    "resources": [
+      "tab-webview-subpage-about.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "tab-webview-subpage-contact.html",
+      "css/mui.indexedlist.css",
+      "js/mui.indexedlist.js"
+    ],
+    "refer": [
+      "tab-webview-subpage-about.html",
+      "tab-webview-subpage-chat.html",
+      "tab-webview-subpage-contact.html",
+      "tab-webview-subpage-setting.html"
+    ]
+  },
+  "tab-webview-subpage-about.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "tab-webview-subpage-chat.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.indexedlist.js",
+      "css/mui.indexedlist.css",
+      "img/zyh.jpg"
+    ],
+    "refer": []
+  },
+  "tab-webview-subpage-contact.html": {
+    "resources": [
+      "css/mui.min.css",
+      "img/zyh.jpg",
+      "img/ldn.jpg",
+      "fonts/mui.ttf",
+      "img/ay.jpg",
+      "js/mui.min.js",
+      "json/aa.json",
+      "json/weixin.json"
+    ],
+    "refer": []
+  },
+  "tab-webview-subpage-setting.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/zyh.jpg",
+      "img/ay.jpg",
+      "img/touxiang.jpg",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  }
+}

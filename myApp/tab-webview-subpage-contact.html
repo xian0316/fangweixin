@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			 .oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}			
+			.oa-contact-cell {
+				position: relative;
+				margin: -20px 0;
+			}
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				/*border-radius: 50%;*/
+				width: 40px;
+				height: 40px;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+			.oa-contact-position{
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content" style="margin-top: -4.5%;">
+			<ul id="xinxiList" class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+				 
+			</ul>
+		</div>
+	
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery-2.1.0.js"></script>
+	<script>
+		mui.init({
+			swipeBack:false //启用右滑关闭功能
+		});
+		mui.get('json/weixin.json',{
+		},function(data){
+		 var result = '';
+          for(var i = 0; i < data.weixin.length; i++){
+			    result += '<li class="mui-table-view-cell"><div class="mui-slider-cell"><div class="oa-contact-cell mui-table">'+
+            '<div class="oa-contact-avatar mui-table-cell"><img src="'+data.weixin[i].img+'" /></div><div class="oa-contact-content mui-table-cell">'+
+            '<div class="mui-clearfix"><h4 class="oa-contact-name">'+data.weixin[i].name+'</h4><span class="oa-contact-position mui-h6" >'+data.weixin[i].date+
+            '</span></div><p class="oa-contact-email mui-h6">'+data.weixin[i].text+'</p></div></div></div></li>'
+          }
+           $('#xinxiList').append(result);  
+		},'json'
+		);
+	</script>
+</html>
