@@ -15,13 +15,23 @@
 			body {
 				background-color: #efeff4;
 			}
+				.mui-popover {
+				height: 230px;
+				width: 60%;
+			}
+			.mui-content {
+				padding: 10px;
+			}
+			.sundry-font{
+				font-size: 15px;
+			}
 		</style>
 	</head>
 
 	<body>
 		<header class="mui-bar mui-bar-nav" style="background: #383b3d;">
 		    <h1  style="font-size: 18px; margin-top: 5%; color: white;">微信</h1>
-		   	<a class=" mui-icon mui-icon-plusempty mui-pull-right" style="margin-top: -12%; color: white;margin-left: 20px;"></a>
+		   	<a href="#topPopover" class=" mui-icon mui-icon-plusempty mui-pull-right" style="margin-top: -12%; color: white;margin-left: 20px;"></a>
 		    <a class=" mui-icon iconfont icon-chazhao mui-pull-right" style="margin-top: -12%; color: white; "></a>
 		</header>
 		<nav class="mui-bar mui-bar-tab">
@@ -42,6 +52,24 @@
 				<span class="mui-tab-label">我</span>
 			</a>
 		</nav>
+					<ul id="topPopover" class="mui-table-view mui-popover" >
+						<li class="mui-table-view-cell ">
+						<a href="#" class="mui-icon iconfont icon-liaotian" >&nbsp;&nbsp;<span class="sundry-font">发起群聊</span></a>
+						</li>
+						<li class="mui-table-view-cell ">
+							<a href="#" class="mui-icon iconfont icon-tianjiahaoyou" >&nbsp;&nbsp;<span class="sundry-font">添加朋友</span></a>
+						</li>
+						<li class="mui-table-view-cell ">
+							<a href="#" class="mui-icon iconfont icon-saoyisao" >&nbsp;&nbsp;<span class="sundry-font">扫一扫</span></a>
+						</li>
+						<li class="mui-table-view-cell ">
+							<a href="#" class="mui-icon iconfont icon-fukuan" >&nbsp;&nbsp;<span class="sundry-font">收付款</span></a>
+						</li>
+						<li class="mui-table-view-cell ">
+							<a href="#" class="mui-icon iconfont icon-youjian" >&nbsp;&nbsp;<span class="sundry-font">帮助与反馈</span></a>
+						</li>
+					</ul>
+	
 		<script src="js/mui.min.js"></script>
 		<script src="js/mui.indexedlist.js"></script>
 		<script type="text/javascript" charset="utf-8"> 

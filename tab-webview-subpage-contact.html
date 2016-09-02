@@ -53,25 +53,108 @@
 				 
 			</ul>
 		</div>
-	
+	<div id="middlePopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell"><a href="#">Item1</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item2</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item3</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item4</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item5</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item6</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item7</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item8</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item9</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">Item10</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
 	</body>
-	<script src="js/mui.min.js"></script>
 	<script src="js/jquery-2.1.0.js"></script>
+	<script src="js/mui.min.js"></script>
+	
 	<script>
 		mui.init({
-			swipeBack:false //启用右滑关闭功能
+	  gestureConfig:{
+   tap: true, //默认为true
+   doubletap: true, //默认为false
+   longtap: true, //默认为false
+   swipe: true, //默认为true
+   drag: true, //默认为true
+   hold:true,//默认为false，不监听
+   release:true//默认为false，不监听
+  }
 		});
+			function hold(){
+					mui(".mui-table-view").on('longtap','.mui-table-view-cell',function(){
+						var id = this.getAttribute("id");
+			 			 mui.alert(id, 'Hello MUI', function() {
+								
+								
+				});	
+			
+			}) 
+		
+		
+		
+			
+			}
+		
 		mui.get('json/weixin.json',{
 		},function(data){
 		 var result = '';
           for(var i = 0; i < data.weixin.length; i++){
-			    result += '<li class="mui-table-view-cell"><div class="mui-slider-cell"><div class="oa-contact-cell mui-table">'+
+			    result += '<li id="'+data.weixin[i].id+'" class="mui-table-view-cell"><div class="mui-slider-cell"><div class="oa-contact-cell mui-table">'+
             '<div class="oa-contact-avatar mui-table-cell"><img src="'+data.weixin[i].img+'" /></div><div class="oa-contact-content mui-table-cell">'+
             '<div class="mui-clearfix"><h4 class="oa-contact-name">'+data.weixin[i].name+'</h4><span class="oa-contact-position mui-h6" >'+data.weixin[i].date+
             '</span></div><p class="oa-contact-email mui-h6">'+data.weixin[i].text+'</p></div></div></div></li>'
           }
            $('#xinxiList').append(result);  
+           	hold();
 		},'json'
-		);
+			
+		)
+				
+//			document.getElementById("1").addEventListener('tap', function() {
+//				var btnArray = ['否', '是'];
+//				mui.confirm('MUI是个好框架，确认？', 'Hello MUI', btnArray, function(e) {
+//					if (e.index == 1) {
+//						info.innerText = '你刚确认MUI是个好框架';
+//					} else {
+//						info.innerText = 'MUI没有得到你的认可，继续加油'
+//					}
+//				})
+//			});
+		
+		
+		
+			 mui(".mui-table-view").on('tap','.mui-table-view-cell',function(){
+		 	 //获取id
+		 	 var id = this.getAttribute("id");
+			//localStorage.setItem({"id",id});
+			//聊天界面
+		      mui.openWindow(
+         	 {
+         url:'chat.html'
+      		});
+				}) 	
+		
+
+				
+				
 	</script>
 </html>

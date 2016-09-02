@@ -13,20 +13,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-shezhi:before { content: "\e602"; }
+.icon-fukuan:before { content: "\e614"; }
 .icon-pengyouquan:before { content: "\e603"; }
+.icon-fanhui:before { content: "\e612"; }
 .icon-erweima:before { content: "\e60c"; }
+.icon-liaotian:before { content: "\e615"; }
 .icon-biaoqing:before { content: "\e60d"; }
 .icon-youxi:before { content: "\e604"; }
-.icon-saoyisao:before { content: "\e605"; }
 .icon-chazhao:before { content: "\e60b"; }
 .icon-yupiao:before { content: "\e606"; }
 .icon-yaoyiyao:before { content: "\e60a"; }
 .icon-shoucang:before { content: "\e60e"; }
 .icon-xiangce:before { content: "\e60f"; }
+.icon-saoyisao:before { content: "\e616"; }
+.icon-youjian:before { content: "\e617"; }
 .icon-xingxing:before { content: "\e600"; }
 .icon-gouwu:before { content: "\e607"; }
+.icon-duoren-copy:before { content: "\e613"; }
 .icon-qiabao:before { content: "\e610"; }
 .icon-qianbao:before { content: "\e611"; }
+.icon-tianjiahaoyou:before { content: "\e618"; }
 .icon-discovershape:before { content: "\e608"; }
 .icon-fujinderen:before { content: "\e609"; }
 .icon-icon_account:before { content: "\e601"; }

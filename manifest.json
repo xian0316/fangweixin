@@ -240,9 +240,16 @@
 					"img/ay.jpg",
 					"js/mui.min.js",
 					"json/aa.json",
-					"json/weixin.json"
+					"json/weixin.json",
+					"img/mingren.jpg",
+					"img/lufei.jpg",
+					"js/jquery-2.1.0.js",
+					"img/luluxiu.jpg"
 				],
-				"refer": [],
+				"refer": [
+					"chat.html",
+					"im-chat.html"
+				],
 				"priority": 0
 			},
 			"tab-webview-subpage-setting.html": {
@@ -255,6 +262,54 @@
 					"img/touxiang.jpg",
 					"css/iconfont.css",
 					"fonts/iconfont.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"chat.html": {
+				"resources": [
+					"js/mui.imageViewer.js",
+					"css/app.css",
+					"css/mui.imageviewer.css",
+					"js/arttmpl.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"fonts/iconfont.ttf",
+					"img/lufei.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"im-chat.html": {
+				"resources": [
+					"js/mui.imageViewer.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/mui.imageviewer.css",
+					"js/arttmpl.js",
+					"css/app.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"a.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"b.html"
+				],
+				"priority": 0
+			},
+			"b.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
